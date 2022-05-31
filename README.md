@@ -12,6 +12,13 @@ For this data I used a dataset of 3300 entries that included relevent informatio
 
 ![Histograms of Features
 ](https://github.com/seanisthegood/Customer_Churn_Project/blob/main/Images/HISTOGRAMS.png)
+
+## Customer Charges
+
+The following charts give an idea of the average charge per customer for the dataset. The data is divided into day charges, night charges, evening charges, and international chargres. The feature total charges and these charts reflect that feature. 
+
+![Customer Charges](https://github.com/seanisthegood/Customer_Churn_Project/blob/main/Images/Churned%20vs%20Retained%20Price.png)
+
 ## Model Pipeline
 
 I used a model Pipeline with a package called Skippa that returns a dataframe from the pipeline. The pipeline helped to prevent data leakage when as the pipeline was using to scale data during cross-validation. 
@@ -20,9 +27,6 @@ I used a model Pipeline with a package called Skippa that returns a dataframe fr
 
 I used a variety of models in pursuit of the best model - Logisitic Regression, KNN, and Tree Based Models. Tree Based models scored best and the Boosted versions showed the best scores on the data. 
 
-## Feature Importance
-
-Using the Feature Importance for the most successul models I was able to drop features to make a more streamlined model - Bagged Decision Trees and Random Forrest pointed toward dropping the 'State' and 'Area Code' features from the training data.
 
 ## Cross-Validation and Hyper-Parameter Tuning
 

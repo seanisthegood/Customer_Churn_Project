@@ -6,7 +6,6 @@ This is a project to build a classifier for customer churn for SyriaTel - its an
 
 Customer churn is a problem affecting any subsriber-based entity, identifying customers that will leave a service can mitigate the cost finding new users. A successful model can help predict who leave the service and potentially identify problem areas. 
 
-![Churned vs Retained](https://github.com/seanisthegood/Customer_Churn_Project/blob/main/Images/Churned%20Bar%20Chart.png)
 ## Project Data
 
 For this data I used a dataset of 3300 entries that included relevent information for each customer including minutes usage, charges, and plan status including international plan status and voicemail plan status. The dataset also included location information which through modeling I deemed not as relevent or useful for modeling. The dataset was clean and did not require very much in the way of cleaning.
@@ -43,5 +42,14 @@ After taking a look at a dataframe with the all the models I opted to go with th
 
 ## Final Test Score
 
-I went with the XGBOOST model, but other models performed almost equally well on cross-validation. 
+I went with the XGBOOST model, but other models performed almost equally well on cross-validation. The XGBOOST model showed the highest recall score with the lowest standard deviation on the cross-validation on the Bayesian HyperParameter Search. The model performed better on the holdout test data than the cross-validation, but that could be the randomness of the test data.
 ![Confusino Matrix for README](https://user-images.githubusercontent.com/80093912/169385336-44bb2be8-413a-4e84-a7f1-449b0522e14f.png)
+
+## Post Modeling Reccomendations
+
+Looking at the Shapley Scores from the Model revealed a few insights -
+* Internatinoal Plan greatly contributed to the prediction of a churn for the final model
+* At higher dollar amounts churn rate increased
+* Customer Service calls were a high indicator of potential Churn
+
+![Shapley Feature Importance](https://github.com/seanisthegood/Customer_Churn_Project/blob/main/Images/Feature%20Importances%20-%20Shap.png)

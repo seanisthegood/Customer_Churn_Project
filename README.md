@@ -6,6 +6,7 @@ This is a project to build a classifier for customer churn for SyriaTel - its an
 
 Customer churn is a problem affecting any subsriber-based entity, identifying customers that will leave a service can mitigate the cost finding new users. A successful model can help predict who leave the service and potentially identify problem areas. 
 
+![Churned vs Retained](https://github.com/seanisthegood/Customer_Churn_Project/blob/main/Images/Churned%20Bar%20Chart.png)
 ## Project Data
 
 For this data I used a dataset of 3300 entries that included relevent information for each customer including minutes usage, charges, and plan status including international plan status and voicemail plan status. The dataset also included location information which through modeling I deemed not as relevent or useful for modeling. The dataset was clean and did not require very much in the way of cleaning.

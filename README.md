@@ -10,6 +10,8 @@ Customer churn is a problem affecting any subsriber-based entity, identifying cu
 
 For this data I used a dataset of 3300 entries that included relevent information for each customer including minutes usage, charges, and plan status including international plan status and voicemail plan status. The dataset also included location information which through modeling I deemed not as relevent or useful for modeling. The dataset was clean and did not require very much in the way of cleaning.
 
+![Histograms of Features
+](https://github.com/seanisthegood/Customer_Churn_Project/blob/main/Images/HISTOGRAMS.png)
 ## Model Pipeline
 
 I used a model Pipeline with a package called Skippa that returns a dataframe from the pipeline. The pipeline helped to prevent data leakage when as the pipeline was using to scale data during cross-validation. 

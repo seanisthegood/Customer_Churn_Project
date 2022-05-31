@@ -57,3 +57,11 @@ Looking at the Shapley Scores from the Model revealed a few insights -
 * Customer Service calls were a high indicator of potential Churn
 
 ![Shapley Feature Importance](https://github.com/seanisthegood/Customer_Churn_Project/blob/main/Images/Feature%20Importances%20-%20Shap.png)
+
+The following chart shows the churn rate per a binned charge group with international customers compared to non-internatinoal customers-
+
+![ChargeGroupsIntvsNonInt](https://github.com/seanisthegood/Customer_Churn_Project/blob/main/Images/Customer%20Charge%20Groups.png)
+
+## Further Modeling
+
+A further project would like to do see some better location information, and information on data useage. Location infomration had an inconsistency of area codes and states which was confusing. Phones have primarily become used for texting, internet, and app useage since this data set was recorded, so that would be more helpful to see. 
